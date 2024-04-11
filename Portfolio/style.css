@@ -24,7 +24,7 @@
 
 /* Container class */
 .container {
-  width: 1200px;
+  width: 62.5vw;
   margin: 0 auto;
 }
 
@@ -317,8 +317,48 @@ a {
 }
 
 /**************** Media Queries START *****************/
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding-bottom: 0;
+  }
+
+  .faded-text {
+    display: none;
+  }
+
+  .hero-section-left {
+    order: 2;
+  }
+
+  .hero-section-right {
+    order: 1;
+    margin-top: 2rem;
+  }
+
+  .user-image {
+    padding: 0;
+  }
+
+  .hero-section-description {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .btn-pink {
+    order: 3;
+    margin: 0 auto;
+  }
+  .role {
+    font-weight: 800;
+    font-size: 28px;
+  }
+}
 
 /**************** Media Queries END *****************/
+
 /* End hero section */
 
 /* Start Project section */
